@@ -20,6 +20,27 @@ brew install python3.11
 choco install python311
 ```
 
+### Avec UV
+
+`uv` est une librairie qui permet de gérer l'installation et les environnements virtuels, tout comme pip, mais plus rapide et qui se met à jour automatiquement au lancement de script python. Dans le cas des notebooks, ce n'est pas forcément la solution la plus pratique, mais elle est plus efficace que pip. 
+
+1. Installer uv
+
+```bash
+brew install uv
+choco install uv
+```
+
+2. Créer votre environnement virtuel avec les dépendances installées automatiquement.
+
+uv a l'avantage de pouvoir créer un environnement virtuel et d'installer les dépendances automatiquement. Il vous suffit de lancer la commande suivante dans le répertoire du projet :
+```bash
+uv sync
+# ou
+uv pip install -r requirements.txt
+```
+Ces commandes installent les dépendances et créent un environnement virtuel (nommé .venv), et s'assure que les packages sont bien à jour. 
+
 ### Installer les dépendances via pip
 1. Créer votre environnement virtuel
 
@@ -50,24 +71,3 @@ pip install -r requirements.txt
 ```
 
 Le fichier requirements.txt contient la liste des packages nécessaires à la formation. Vous pouvez l'ouvrir avec n'importe quel éditeur de texte pour voir les packages qui seront installés.
-
-### Avec UV
-
-`uv` est une librairie qui permet de gérer l'installation et les environnements virtuels, tout comme pip, mais plus rapide et qui se met à jour automatiquement au lancement de script python. Dans le cas des notebooks, ce n'est pas forcément la solution la plus pratique, mais elle est plus efficace que pip. 
-
-1. Installer uv
-
-```bash
-brew install uv
-choco install uv
-```
-
-2. Créer votre environnement virtuel avec les dépendances installées automatiquement.
-
-uv a l'avantage de pouvoir créer un environnement virtuel et d'installer les dépendances automatiquement. Il vous suffit de lancer la commande suivante dans le répertoire du projet :
-```bash
-uv sync
-# ou
-uv pip install -r requirements.txt
-```
-Ces commandes installent les dépendances et créent un environnement virtuel (nommé .venv), et s'assure que les packages sont bien à jour. 
