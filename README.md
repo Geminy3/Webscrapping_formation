@@ -1,4 +1,4 @@
-# Formation à la manipulation de données textuelles en Python
+# Initation au webscrapping avec python
 
 Ce repository contient les notebooks utlisés pour la formation ***Initation au webscrapping avec python*** organisée par MSH-LSE par Alioscha Massein.
 Cette formation est tirée de précédentes itération de la [formation manipulation de données textuelles en Python](https://www.ixxi.fr/agenda/evenements/formation-a-la-manipulation-de-donnees-textuelles-en-python-2023) organisée pour l'IXXI et la MSH-LSE par Jean-Philippe Magué et Julien Velcin.
