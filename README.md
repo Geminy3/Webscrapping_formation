@@ -3,6 +3,16 @@
 Ce repository contient les notebooks utlisés pour la formation ***Initation au webscrapping avec python & BeautifulSoup*** organisée par MSH-LSE par Alioscha Massein.
 Cette formation est tirée de précédentes itération de la [formation manipulation de données textuelles en Python](https://www.ixxi.fr/agenda/evenements/formation-a-la-manipulation-de-donnees-textuelles-en-python-2023) organisée pour l'IXXI et la MSH-LSE par Jean-Philippe Magué et Julien Velcin.
 
+## Cloner le dossier (repository)
+
+En premier lieu, il vous faut cloner ce dossier. Vous pouvez récupérer son url dans la barre d'adresse de votre navigateur, ou en cliquant sur le bouton "Code" en haut à droite de cette page.
+Vérifier que git est bien installé sur votre machine. Sinon il vous faudra l'installer avec un des gestionnaires de package cités plus bas.
+```bash
+git clone <url_du_repository>
+```
+
+Sinon, vous pouvre télécharger ce dossier en cliquant sur le bouton "Code" puis "Download ZIP". Il vous faudra dézipper le dossier une fois téléchargé.
+
 ## Installation des dépendances
 
 Pour installer les packages nécessaire à la formation, il existe plusieurs options : 
