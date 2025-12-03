@@ -22,7 +22,8 @@ brew install python3.11
 choco install python311
 ```
 
-Deux options s'offrent à vous pour l'installation des dépendances : via `uv` ou via `pip` :
+Deux options s'offrent à vous pour l'installation des dépendances : via `uv` ou via `pip`.
+
 *Nous n'avons pas détaillé l'installation via Anaconda, mais vous pouvez très bien créer un environnement virtuel avec conda et installer les dépendances via pip dans cet environnement.*
 
 ### Avec UV
