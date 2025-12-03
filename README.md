@@ -11,11 +11,9 @@ Vérifier que git est bien installé sur votre machine. Sinon il vous faudra l'i
 git clone <url_du_repository>
 ```
 
-Sinon, vous pouvre télécharger ce dossier en cliquant sur le bouton "Code" puis "Download ZIP". Il vous faudra dézipper le dossier une fois téléchargé.
+Sinon, vous pouvez télécharger ce dossier en cliquant sur le bouton "Code" puis "Download ZIP". Il vous faudra dézipper le dossier une fois téléchargé.
 
 ## Installation des dépendances
-
-Pour installer les packages nécessaire à la formation, il existe plusieurs options : 
 
 1. Vérifier que vous utilisez bien la version 3.11 de Python. Si ce n'est pas le cas, vous pouvez l'installer via [Anaconda](https://www.anaconda.com/products/distribution#download-section) ou via des gestionnaires de package comme [Homebrew](https://brew.sh/) (pour Mac) ou [Chocolatey](https://chocolatey.org/) (pour Windows).
 
@@ -23,6 +21,9 @@ Pour installer les packages nécessaire à la formation, il existe plusieurs opt
 brew install python3.11
 choco install python311
 ```
+
+Deux options s'offrent à vous pour l'installation des dépendances : via `uv` ou via `pip` :
+*Nous n'avons pas détaillé l'installation via Anaconda, mais vous pouvez très bien créer un environnement virtuel avec conda et installer les dépendances via pip dans cet environnement.*
 
 ### Avec UV
 
