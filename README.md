@@ -21,8 +21,16 @@ Sinon, vous pouvez télécharger ce dossier en cliquant sur le bouton "Code" pui
 brew install python3.11
 choco install python311
 ```
+Vous pouvez aussi gérer l'entièreté de vos installations de python avec `uv`, un petit gestionnaire de package python qui permet de gérer vos environnements de développement, vos version de python, mais aussi de vous accompagner dans le déploiement d'application ou de package. 
 
-Deux options s'offrent à vous pour l'installation des dépendances : via `uv` ou via `pip`.
+Si vous souhaitez installer python avec `uv` il faut installer `uv` sur votre ordinateur (ci-dessous) et lancer la commande suivante : 
+```bash
+uv python install 
+# ou
+uv python install 3.12.3 #specific version of python
+```
+
+Deux options s'offrent donc à vous pour l'installation des dépendances : via `uv` ou via `pip`.
 
 *Nous n'avons pas détaillé l'installation via Anaconda, mais vous pouvez très bien créer un environnement virtuel avec conda et installer les dépendances via pip dans cet environnement.*
 
@@ -37,6 +45,17 @@ brew install uv
 choco install uv
 ```
 
+Vous pouvez aussi installer `uv` via une autre ligne de commande détaillée dans la documentation du package : 
+```bash
+#Sur MacOs et Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+````
+
+```cmd
+#Sur Windows
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
 2. Créer votre environnement virtuel avec les dépendances installées automatiquement.
 
 uv a l'avantage de pouvoir créer un environnement virtuel et d'installer les dépendances automatiquement. Il vous suffit de lancer la commande suivante dans le répertoire du projet :
@@ -46,6 +65,37 @@ uv sync
 uv pip install -r requirements.txt
 ```
 Ces commandes installent les dépendances et créent un environnement virtuel (nommé .venv), et s'assure que les packages sont bien à jour. 
+
+#### Initialiser un nouveau projet
+
+Si votre projet est tout nouveau, et que vous n'avez pas encore de fichier `uv.lock` et `pyproject.toml`, vous pouvez initialiser un nouveau projet de deux manière avec uv :
+- Soit en créant un nouveau projet depuis `uv` : 
+```bash
+uv init mon_projet
+```
+
+En initialisation un nouveau projet, plusieurs fichiers sont créés : 
+
+> drwxr-xr-x   9 alioscha  staff  288 21 mai   12:24 .git
+> -rw-r--r--   1 alioscha  staff  109 21 mai   12:24 .gitignore
+> -rw-r--r--   1 alioscha  staff    5 21 mai   12:24 .python-version
+> -rw-r--r--   1 alioscha  staff   82 21 mai   12:24 main.py
+> -rw-r--r--   1 alioscha  staff  150 21 mai   12:24 pyproject.toml
+> -rw-r--r--   1 alioscha  staff    0 21 mai   12:24 README.md
+
+- Soit en initialisant un projet dans un dossier :
+```bash
+uv init
+```
+
+Les mêmes fichiers qu'au dessus sont créés. 
+
+#### Installer de nouvelles dépendances
+
+Pour installer de nouvelles dépédances avec uv, il suffit d'utiliser la commande : 
+```bash
+uv add le_package_que_je_veux_installer
+```
 
 ### Installer les dépendances via pip
 1. Créer votre environnement virtuel
