@@ -1,0 +1,28 @@
+# Core web scraping
+beautifulsoup4==4.13.3
+requests==2.32.3
+lxml==5.3.1
+html5lib==1.1
+
+# Data handling
+pandas==2.2.3
+numpy==2.2.4
+
+# XML / API work
+python-dotenv==1.0.1
+
+# Progress bars
+tqdm==4.67.1
+
+# Visualisation
+matplotlib==3.10.1
+
+# Jupyter notebooks
+jupyter==1.1.1
+notebook==7.3.3
+ipykernel==6.29.5
+
+# Optional: text analysis / NLP
+#spacy==3.8.5
+#scikit-learn==1.6.1
+#wordcloud==1.9.4
