@@ -3,6 +3,52 @@
 Ce repository contient les notebooks utlisés pour la formation ***Initation au webscrapping avec python & BeautifulSoup*** organisée par MSH-LSE par Alioscha Massein.
 Cette formation est tirée de précédentes itération de la [formation manipulation de données textuelles en Python](https://www.ixxi.fr/agenda/evenements/formation-a-la-manipulation-de-donnees-textuelles-en-python-2023) organisée pour l'IXXI et la MSH-LSE par Jean-Philippe Magué et Julien Velcin.
 
+## Installation de Python
+Vous pouvez installer Python ici:
+
+https://www.python.org/downloads/release/python-3141/
+
+## Installation automatique de la formation webscraping MSH-LSE
+
+### Sur macOS / Linux
+
+```bash
+curl -L -o install_formation.sh "https://gitlab.huma-num.fr/msh-lse1/toolbox/-/raw/main/install_formation.sh"
+
+chmod +x install_formation.sh
+
+./install_formation.sh
+```
+
+---
+
+### Sur Windows (PowerShell)
+
+```powershell
+Invoke-WebRequest -Uri "https://gitlab.huma-num.fr/msh-lse1/toolbox/-/raw/main/install_formation.ps1" -OutFile "install_formation.ps1"
+
+powershell -ExecutionPolicy Bypass -File .\install_formation.ps1
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------
+
+
+
+
 ## Cloner le dossier (repository)
 
 En premier lieu, il vous faut cloner ce dossier. Vous pouvez récupérer son url dans la barre d'adresse de votre navigateur, ou en cliquant sur le bouton "Code" en haut à droite de cette page.
@@ -127,26 +173,3 @@ pip install -r requirements.txt
 ```
 
 Le fichier requirements.txt contient la liste des packages nécessaires à la formation. Vous pouvez l'ouvrir avec n'importe quel éditeur de texte pour voir les packages qui seront installés.
-
-
-## Installation automatique de la formation webscraping MSH-LSE
-
-### Sur macOS / Linux
-
-```bash
-curl -L -o install_formation.sh "https://gitlab.huma-num.fr/msh-lse1/toolbox/-/raw/main/install_formation.sh"
-
-chmod +x install_formation.sh
-
-./install_formation.sh
-```
-
----
-
-### Sur Windows (PowerShell)
-
-```powershell
-Invoke-WebRequest -Uri "https://gitlab.huma-num.fr/msh-lse1/toolbox/-/raw/main/install_formation.ps1" -OutFile "install_formation.ps1"
-
-powershell -ExecutionPolicy Bypass -File .\install_formation.ps1
-```
