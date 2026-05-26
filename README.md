@@ -127,3 +127,26 @@ pip install -r requirements.txt
 ```
 
 Le fichier requirements.txt contient la liste des packages nécessaires à la formation. Vous pouvez l'ouvrir avec n'importe quel éditeur de texte pour voir les packages qui seront installés.
+
+
+## Installation automatique de la formation webscraping MSH-LSE
+
+### Sur macOS / Linux
+
+```bash
+curl -L -o install_formation.sh "https://gitlab.huma-num.fr/msh-lse1/toolbox/-/raw/main/install_formation.sh"
+
+chmod +x install_formation.sh
+
+./install_formation.sh
+```
+
+---
+
+### Sur Windows (PowerShell)
+
+```powershell
+Invoke-WebRequest -Uri "https://gitlab.huma-num.fr/msh-lse1/toolbox/-/raw/main/install_formation.ps1" -OutFile "install_formation.ps1"
+
+powershell -ExecutionPolicy Bypass -File .\install_formation.ps1
+```
